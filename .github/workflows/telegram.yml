@@ -12,6 +12,6 @@ jobs:
     steps:        
     - uses: avkviring/telegram-github-action@v0.0.13
       env:
-        telegram_to: ${{ secrets.TELEGRAM_USER_ID }}  
+        telegram_to: ${{ secrets.TELEGRAM_GROUP_ID }}  
         telegram_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
         event: ${{ toJson(github.event) }}
